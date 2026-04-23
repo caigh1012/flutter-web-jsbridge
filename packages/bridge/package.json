@@ -1,0 +1,33 @@
+{
+  "name": "bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "bin/index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.9.0",
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "12.1.2",
+    "@types/node": "^22.15.3",
+    "rollup-plugin-dts": "^6.1.1"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.27.0",
+    "core-js": "^3.41.0",
+    "socket.io-client": "^4.8.1",
+    "tslib": "^2.8.1",
+    "uuid": "^11.1.0"
+  }
+}

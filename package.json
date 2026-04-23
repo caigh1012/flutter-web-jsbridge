@@ -1,0 +1,60 @@
+{
+  "name": "flutter-web-jsbridge",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky || true",
+    "bridge-mock:dev": "pnpm --filter bridge-mock dev",
+    "bridge-mock:build": "pnpm --filter bridge-mock build",
+    "lint": "eslint **/*.{ts,tsx,js,jsx,vue}",
+    "lint:fix": "eslint **/*.{ts,tsx,js,jsx,vue} --fix",
+    "format": "prettier **/*.{ts,tsx,js,jsx,vue,json,yaml,yml} --write .",
+    "lint-staged": "npx lint-staged"
+  },
+  "author": "Kyler Tsai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caigh1012/flutter-web-jsbridge/issues"
+  },
+  "homepage": "https://caigh1012.github.io/flutter-web-jsbridge",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caigh1012/flutter-web-jsbridge.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@eslint/js": "^9.25.1",
+    "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^9.25.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-vue": "10.1.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "rollup": "^4.40.0",
+    "typescript": "5.8.3",
+    "typescript-eslint": "^8.31.0"
+  },
+  "packageManager": "pnpm@10.9.0",
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,vue,json,yaml,yml}": [
+      "npm run format"
+    ],
+    "*.{ts,tsx,js,jsx,vue}": [
+      "npm run lint"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+const cfg = {
+  printWidth: 120,
+  tabWidth: 2,
+  semi: true,
+  singleQuote: true,
+  bracketSameLine: true,
+  singleAttributePerLine: true,
+  endOfLine: 'lf',
+};
+
+export default cfg;

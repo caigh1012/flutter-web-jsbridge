@@ -1,0 +1,14 @@
+# Ignore artifacts:
+pnpm-lock.yaml
+*.md
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+# 忽略编译后的文件
+packages/bridge/bin/*.js
+packages/bridge-mock/bin/*.js
+packages/bridge-dev-tool/dist/**/*
+packages/bridge-mock/dist/**/*
